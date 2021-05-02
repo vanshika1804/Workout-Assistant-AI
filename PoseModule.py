@@ -27,16 +27,16 @@ class poseDetector():
         return img
 
     def findPosition(self, img, draw=True):
-        lmList = []
+        self.lmList = []
         if self.results.pose_landmarks:
             for id, lm in enumerate(self.results.pose_landmarks.landmark):
                 h, w, c = img.shape
                 #print(id, lm)
                 cx, cy = int(lm.x * w), int(lm.y * h) #conerting lm.x that is a ratio to coordinates
-                lmList.append([id, cx, cy])
+                self.lmList.append([id, cx, cy])
                 if draw:
                     cv2.circle(img, (cx,cy), 10, (255,0,0), cv2.FILLED)
-        return lmList
+        return self.lmList
 
 
 
@@ -51,8 +51,11 @@ def main():
     while True:
         success, img = cap.read()
         img = detector.findPose(img)
-        lmList = detector.findPosition(img)
-        print(lmList[14])
+        lmList = detector.findPosition(img, draw=False)
+        if len(lmList) != 0:
+            print(lmList[14])
+            cv2.circle(img, (lmList[14][1],lmList[14][2]), 15, (0,0,255), cv2.FILLED)
+        
         cTime = time.time()
         fps = 1/(cTime-pTime)
         pTime = cTime
