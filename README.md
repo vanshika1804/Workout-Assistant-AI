@@ -27,27 +27,24 @@ The methodology for the project is explained as follows:
 
 <img src="https://github.com/adityakumar2809/SprintAnalysis/blob/master/info/pose_tracking_full_body_landmarks.png" alt="Landmarks Across the Body" width="600px" />
 
-<img src="https://github.com/adityakumar2809/SprintAnalysis/blob/master/info/PoseDetection.jpg" alt="Detected Landmarks" width="300px" />
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftowardsdatascience.com%2Frealtime-multiple-person-2d-pose-estimation-using-tensorflow2-x-93e4c156d45f&psig=AOvVaw3bzPNuGrdl2zDnUFK1p0td&ust=1634561209418000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLDIyZe90fMCFQAAAAAdAAAAABAD" alt="Detected Landmarks" width="600px" />
 
 * Using three consecutive joints as points and cosine rule as a mathematical tool, the angle formed by the middle joint is represented (Right Shoulder, Right Elbow, Right Wrist gives the angle formed at the Right Elbow)
 
-![Angle formed at a Joint](https://github.com/adityakumar2809/SprintAnalysis/blob/master/info/JointAngle.jpg)
-
+<img src="https://media.cheggcdn.com/media/0c6/0c6ec8fa-b6e3-4161-9dee-166c2adf275d/php0m4xeM" alt="Detected Landmarks" width="600px" />
 
 * These angles are continuously recorded with time and its values are recorded
 * Smoothening functions are utilized to smoothen any noise found in the angles obtained
 
-<img src="https://github.com/adityakumar2809/SprintAnalysis/blob/master/info/GraphSmoothening.png" alt="Graph Smoothening" width="500px" />
+<img src="https://i.stack.imgur.com/Jk4EV.png" alt="Graph Smoothening" width="500px" />
 
 * The resulting data is then superimposed with the data of trained atheletes to the the offset
 
-<img src="https://github.com/adityakumar2809/SprintAnalysis/blob/master/info/LiveRunning.png" alt="LiveRunning" width="500px" />
+<img src="https://miro.medium.com/max/600/0*pdKm-xabavEb-rQx" alt="LiveRunning" width="500px" />
 
 * If the offset is within the given threshold, the person is doing good, else modifications in the position are suggested and number of reps is displayed on the screen.
 
 ## Inferences
 The data obtained after successful analysis for various joints and muscles across the body yields enough evidence to make a calculated estimate as to whether the  postion is correct or not.
-
-![Joint Analysis](https://github.com/adityakumar2809/SprintAnalysis/blob/master/info/Result.png)
 
 It involves no physical connection to the body and there is no time required to set it up, hence can be easily configured, even at a remote location. All this can ease the process of screening extremely easy for the physically challenging events people are willing to participate in  
