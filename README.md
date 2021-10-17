@@ -27,7 +27,7 @@ The methodology for the project is explained as follows:
 
 <img src="https://github.com/adityakumar2809/SprintAnalysis/blob/master/info/pose_tracking_full_body_landmarks.png" alt="Landmarks Across the Body" width="600px" />
 
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftowardsdatascience.com%2Frealtime-multiple-person-2d-pose-estimation-using-tensorflow2-x-93e4c156d45f&psig=AOvVaw3bzPNuGrdl2zDnUFK1p0td&ust=1634561209418000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLDIyZe90fMCFQAAAAAdAAAAABAD" alt="Detected Landmarks" width="600px" />
+<img src="https://usmsystems.com/wp-content/uploads/2021/05/human-pose-estimation.jpg" alt="Detected Landmarks" width="600px" />
 
 * Using three consecutive joints as points and cosine rule as a mathematical tool, the angle formed by the middle joint is represented (Right Shoulder, Right Elbow, Right Wrist gives the angle formed at the Right Elbow)
 
